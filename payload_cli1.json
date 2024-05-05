@@ -1,0 +1,31 @@
+{
+    "topic_cli1/topic": "",
+    "caracteristicas_cli1/caracteristicas": [{
+        "pessoa_ids_cli1/pessoa_ids": {
+            "id_nome_cli1/id_nome": "",
+            "id_sexo_cli1/id_sexo": "",
+            "id_cor_cli1/id_cor": ""
+            },
+        "pessoa_descricao_cli1/pessoa_descricao": {
+            "nome_cli1/nome": "",
+            "sexo_cli1/sexo": "",
+            "cor_cli1/cor": ""
+            },
+        "pessoa_preferencias_cli1/pessoa_preferencias": {
+            "prato_cli1/prato": "",
+            "doce_cli1/doce": "",
+            "bebida_cli1/bebida": ""
+            }
+    }],
+    "qualificacoes_cli1/qualificacoes": {
+        "profissionais_cli1/profissionais": {
+        "tempo_funcao_cli1/tempo_funcao": "",
+        "tipo_contrato_cli1/tipo_contrato": "",
+        "nome_ultima_empresa_cli1/nome_ultima_empresa": ""
+        },
+    "animais_cli1/animais": {
+        "domesticado_cli1/domesticado": "",
+        "tipo_cli1/tipo": ""
+        }
+    }
+}
