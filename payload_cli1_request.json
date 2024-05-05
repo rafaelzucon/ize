@@ -1,0 +1,31 @@
+{
+    "topic_cli1": "Administracao",
+    "caracteristicas_cli1": [{
+        "pessoa_ids_cli1": {
+            "id_nome_cli1": 1,
+            "id_sexo_cli1": 1,
+            "id_cor_cli1": 0
+            },
+        "pessoa_descricao_cli1": {
+            "nome_cli1": "Asdrubal",
+            "sexo_cli1": "M",
+            "cor_cli1": "pardo"
+            },
+        "pessoa_preferencias_cli1": {
+            "prato_cli1": "feijoada",
+            "doce_cli1": "paçoca",
+            "bebida_cli1": "água"
+            }
+    }],
+    "qualificacoes_cli1": {
+        "profissionais_cli1": {
+        "tempo_funcao_cli1": "2 meses",
+        "tipo_contrato_cli1": "PJ",
+        "nome_ultima_empresa_cli1": "BMW"
+        },
+    "animais_cli1": {
+        "domesticado_cli1": "não",
+        "tipo_cli1": "cão"
+        }
+    }
+}
