@@ -8,6 +8,6 @@ payload_base_str = open("payload_base.json","r").read()
 
 res = Objetalize(payload_cli1_str, payload_base_str, payload_request_str)
 
-print(res.str_payload_final)
+# print(json.dumps(res.payload_final, indent=4))
 
 

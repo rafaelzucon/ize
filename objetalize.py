@@ -1,13 +1,15 @@
 import json
 
+from payload_base import PayloadBase, Qualificacoes, Profissionais, Caracteristicas, PessoaIds, Animais, PessoaDescricao, PessoaPreferencias
+
 
 class Objetalize:
     def __init__(self, text: str, text_base: str, text_request: str):
         self._text = text
         self._base = text_base
         self._text_request = text_request
-        self.str_payload_final: str
-        self.str_payload_final = ""
+        self.payload_final = {}
+        self.str_payload_final: str = ""
         self.deserialize(self._text_request, self._base, self._text,"", "",0)
 
     def type_obj(self, text: str):
@@ -36,23 +38,17 @@ class Objetalize:
                 for key_base in payload_base:
                     if not self.is_object(key_req):
                         if str(str(key).split('/')[0]).strip() == key_req and str(str(key).split('/')[1]).strip() == key_base:
-                            chave = '"' + str(key_base).strip() + '" : '
-                            if "dict" in self.type_obj(
-                                    str(type(payload_request[n] if "list" in str_type_payload_req else payload_request[
-                                        key_req]))
-                            ) and "dict" in self.type_obj(
-                                str(type(payload[i] if "list" in str_type_payload else payload[key]))
-                            ) and "dict" in self.type_obj(str(type(
-                                payload_base[j] if "list" in str_type_payload_base else payload_base[key_base]))):
-                                chave += "{"
-                            if "list" in self.type_obj(
-                                    str(type(payload_request[n] if "list" in str_type_payload_req else payload_request[key_req]))
-                            ) and "list" in self.type_obj(
-                                str(type(payload[i] if "list" in str_type_payload else payload[key]))
-                            ) and "list" in self.type_obj(str(type(payload_base[j] if "list" in str_type_payload_base else payload_base[key_base]))):
-                                chave += "[{"
-                            valor = '"' + str(payload_request[key_req]) + '",\n' if not self.is_object(payload_request[key_req]) else str("")
-                            self.str_payload_final += chave + valor
+                            chave = str(key_base).strip()
+                            valor_req = str(payload_request[key_req]) if not self.is_object(payload_request[key_req]) else str("")
+                            print(c+n+i+j, chave, valor_req)
+                            # if c == 3:
+                            #     print(chave)
+                            #     if chave == "":
+                            #    pessoa_ids = PessoaIds(id_nome=int(valor_req) if chave == "id_nome" else 0, id_sexo=1, id_cor=3)
+                            #     and chave == "id_nome":
+                            #     print(valor_req)
+
+                            self.payload_final[j if "list" in str_type_payload_base else key_base] = valor_req
                     if "dict" in str(type(payload_request[n] if "list" in str_type_payload_req else payload_request[key_req])) or "list" in str(
                             type(payload_request[n] if "list" in str_type_payload_req else payload_request[key_req])):
                         self.deserialize(
