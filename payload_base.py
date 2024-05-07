@@ -14,7 +14,7 @@ class Caracteristicas(object):
 
 
 class PessoaIds(object):
-    def __init__(self, id_nome: int, id_sexo: int, id_cor: int):
+    def __init__(self, id_nome: str, id_sexo: str, id_cor: str):
         self.id_nome = id_nome
         self.id_sexo = id_sexo
         self.id_cor = id_cor
@@ -42,7 +42,7 @@ class Qualificacoes(object):
 
 
 class Profissionais(object):
-    def __init__(self, tempo_funcao: int, tipo_contrato: str, nome_ultima_empresa: str):
+    def __init__(self, tempo_funcao: str, tipo_contrato: str, nome_ultima_empresa: str):
         self.tempo_funcao = tempo_funcao
         self.tipo_contrato = tipo_contrato
         self.nome_ultima_empresa = nome_ultima_empresa

@@ -1,0 +1,31 @@
+{
+    "topic": "",
+    "caracteristicas": [{
+            "pessoa_ids" : {
+                "id_nome": "",
+                "id_sexo": "",
+                "id_cor": ""
+            },
+            "pessoa_descricao" : {
+                "nome": "",
+                "sexo": "",
+                "cor": ""
+            },
+            "pessoa_preferencias" : {
+                "prato": "",
+                "doce": "",
+                "bebida": ""
+            }
+    }],
+    "qualificacoes": {
+        "profissionais": {
+            "tempo_funcao": "",
+            "tipo_contrato": "",
+            "nome_ultima_empresa": ""
+        },
+        "animais": {
+            "domesticado": "",
+            "tipo": ""
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Vpcs": [
+        {
+            "VpcId": "vpc-12345678",
+            "InstanceId": "i-0000111",
+            "Tags": [
+                {
+                    "Value": "Hey",
+                    "Key": "Project"
+                },
+                {
+                    "Value": "adsf",
+                    "Key": "lol"
+                }
+            ]
+        },
+        {
+            "VpcId": "vpc-0001111",
+            "InstanceId": "i-0000111",
+            "Tags": [
+                {
+                    "Value": "hehe",
+                    "Key": "oops"
+                },
+                {
+                    "Value": "Hi",
+                    "Key": "Project"
+                }
+            ]
+        }
+    ]
+}
