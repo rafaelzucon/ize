@@ -40,7 +40,7 @@ class Objetalize:
                         if str(str(key).split('/')[0]).strip() == key_req and str(str(key).split('/')[1]).strip() == key_base:
                             chave = str(key_base).strip()
                             valor_req = str(payload_request[key_req]) if not self.is_object(payload_request[key_req]) else str("")
-                            print(c+n+i+j, chave, valor_req)
+                            print(c,n,i,j,txt_tab, chave, valor_req)
                             # if c == 3:
                             #     print(chave)
                             #     if chave == "":

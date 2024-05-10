@@ -16,6 +16,22 @@
             "doce_cli1": "paçoca",
             "bebida_cli1": "água"
             }
+    },{
+        "pessoa_ids_cli2": {
+            "id_nome_cli2": 2,
+            "id_sexo_cli2": 2,
+            "id_cor_cli2":2
+            },
+        "pessoa_descricao_cli2": {
+            "nome_cli2": "Avatar",
+            "sexo_cli2": "X",
+            "cor_cli2": "azul"
+            },
+        "pessoa_preferencias_cli2": {
+            "prato_cli2": "insetos",
+            "doce_cli2": "cebola",
+            "bebida_cli2": "pinga"
+            }
     }],
     "qualificacoes_cli1": {
         "profissionais_cli1": {
